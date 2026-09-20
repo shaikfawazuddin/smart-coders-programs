@@ -1,0 +1,7 @@
+a, op, b = input().split()
+a, b = float(a), float(b)
+if op == '+': print(a + b)
+elif op == '-': print(a - b)
+elif op == '*': print(a * b)
+elif op == '/': print(a / b if b != 0 else 'Division by zero')
+else: print('Invalid operator')

@@ -1,0 +1,6 @@
+month = int(input())
+year = int(input())
+if month == 2: print(29 if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0) else 28)
+elif month in [4, 6, 9, 11]: print(30)
+elif 1 <= month <= 12: print(31)
+else: print('Invalid month')
